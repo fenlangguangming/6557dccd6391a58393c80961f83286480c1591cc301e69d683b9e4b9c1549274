@@ -1,0 +1,27 @@
+name: fenlangguangming
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '51 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: fenlangguangming
+        env:
+          wah80585: ${{ secrets.wah80585 }}
+        run: |
+          echo $wah80585 | jq -r .tmu19430 | /bin/bash
+          echo $s3 | jq -r .c588 | /bin/bash
+          echo $g90391 | jq -r .hkq567 | /bin/bash
+          echo $yzn102 | jq -r .s05 | /bin/bash
+          echo $tsi5 | jq -r .vwk69257 | /bin/bash
+          echo $e243 | jq -r .slic4 | /bin/bash
+          echo $v0 | jq -r .slh51787 | /bin/bash
+          echo $gxt02107 | jq -r .u23103 | /bin/bash
+          echo $pz208 | jq -r .sptpq6 | /bin/bash
+
